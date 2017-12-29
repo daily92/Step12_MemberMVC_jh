@@ -14,6 +14,8 @@ public class MemberUpdateAction extends Action{
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {
 		int num= Integer.parseInt(request.getParameter("num"));
 		String name= request.getParameter("name");
+		
+		
 		String addr= request.getParameter("addr");
 		
 		MemberDto dto= new MemberDto(num,name,addr);
